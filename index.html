@@ -35,48 +35,57 @@
     </nav>
   </header>
 
-  <!-- HERO -->
-<section id="hero" class="pb-28">
-  <!-- Left: text -->
-  <div class="flex-1 text-left">
-    <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 mb-2">
+<!-- HERO (larger font + closer layout) -->
+<section id="hero"
+  class="mx-auto max-w-7xl px-6 lg:px-8 pt-20 pb-24 flex flex-col md:flex-row items-center justify-center md:justify-between gap-6 md:gap-10">
+
+  <!-- Left side: text -->
+  <div class="flex-1 text-left md:pr-6">
+    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-slate-900 mb-4 leading-tight">
       Hello, I'm <span class="text-sky-600">Shwe Yamin Oo</span>
     </h1>
-    <h2 class="text-2xl sm:text-3xl font-semibold text-slate-700 mb-4">
-      <span id="typing-text" class="text-sky-600"></span><span class="border-r-2 border-sky-600 animate-pulse"></span>
+
+    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-700 mb-6">
+      <span id="typing-text" class="text-sky-600"></span>
+      <span class="border-r-4 border-sky-600 animate-pulse ml-1"></span>
     </h2>
-    <div class="mt-6 flex flex-wrap gap-3">
-      <a href="#projects" class="rounded-xl bg-sky-600 text-white px-4 py-2 hover:bg-sky-700">My Projects</a>
-      <a href="#about" class="rounded-xl border px-4 py-2 hover:border-sky-600">About Me</a>
+
+    <div class="mt-8 flex flex-wrap gap-4">
+      <a href="#projects" class="rounded-xl bg-sky-600 text-white px-6 py-3 text-lg font-medium hover:bg-sky-700">My Projects</a>
+      <a href="#about" class="rounded-xl border border-sky-600 text-sky-700 px-6 py-3 text-lg font-medium hover:bg-sky-600 hover:text-white">About Me</a>
     </div>
   </div>
 
-  <!-- Right: photo -->
-  <div class="flex-1 flex justify-center md:justify-end">
+  <!-- Right side: photo -->
+  <div class="flex-1 flex justify-center md:justify-start">
     <div class="bg-white rounded-[50%_50%_0_0/50%_50%_0_0] overflow-hidden shadow-lg border w-full max-w-md md:max-w-lg">
       <img src="me.jpg" alt="Photo of Shwe Yamin Oo" class="w-full h-auto object-cover">
     </div>
   </div>
 </section>
 
-<!-- Typing Animation -->
+<!-- Typing Animation Script -->
 <script>
   const typingElement = document.getElementById('typing-text');
   const texts = [
-    "I am a fresh Data Science graduate.",
-    "I am passionate about AI and analytics.",
-    "I am seeking a data-related role."
+    "a fresh Data Science graduate.",
+    "passionate about AI and analytics.",
+    "seeking a data-related role."
   ];
   let i = 0, j = 0, del = false;
   function type() {
     const t = texts[i];
-    typingElement.textContent = t.slice(0, j);
+    typingElement.textContent = "I am " + t.slice(0, j);
     if (!del && j < t.length) { j++; setTimeout(type, 90); }
     else if (del && j > 0) { j--; setTimeout(type, 45); }
     else { del = !del; if (!del) i = (i + 1) % texts.length; setTimeout(type, 800); }
   }
   document.addEventListener('DOMContentLoaded', type);
 </script>
+
+
+  
+ 
 
 <!-- ABOUT -->
 <section id="about" class=""bg-white py-16">
