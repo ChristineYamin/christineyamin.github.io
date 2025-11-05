@@ -35,67 +35,42 @@
     </nav>
   </header>
 
-  <!-- Anchor: About (added to mirror peer site) -->
-  <section id="about" class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-14 pb-10">
-    <div class="grid md:grid-cols-3 gap-8 items-center">
-      <!-- Photo -->
-      <div class="md:col-span-1 order-1 md:order-none">
-        <div class="bg-white rounded-2xl border p-4 shadow-sm w-full max-w-xs mx-auto">
-          <img src="me.jpg" alt="Photo of Christine Yamin" class="w-full aspect-square object-cover rounded-2xl">
-        </div>
-      </div>
-      <!-- Text -->
-      <div class="md:col-span-2">
-        <h2 class="text-2xl font-bold">About me</h2>
-        <p class="mt-3 text-slate-700">Hello, My name is <span class="font-semibold">Shwe Yamin Oo</span> — a Data science graduate passionate about transforming data into meaningful insights and AI solutions.  I build end‑to‑end projects across Python, SQL, and Machine Learning . My interest include machine learning, data cleaning, artifical intelligence.I’m open to roles in <span class="font-medium">Singapore</span> and <span class="font-medium">remote</span>.</p>
-        <ul class="mt-4 grid sm:grid-cols-2 gap-3 text-sm">
-          <li class="bg-white rounded-xl border p-4"><span class="font-semibold">Focus:</span> Data Analytics, ML, Model Deployment</li>
-          <li class="bg-white rounded-xl border p-4"><span class="font-semibold">Recent:</span> HDB analytics • AI gym‑chatbot • Android reading tracker</li>
-        </ul>
-        <div class="mt-5 flex flex-wrap gap-3">
-          <a href="#projects" class="inline-flex items-center gap-2 rounded-xl bg-sky-600 text-white px-4 py-2 hover:bg-sky-700">See Projects</a>
-          <a href="#resume" class="inline-flex items-center gap-2 rounded-xl border px-4 py-2 hover:border-sky-600">Download Resume</a>
-        </div>
-      </div>
+<!-- Hero / Intro Section -->
+<section id="hero" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 pb-20 flex flex-col md:flex-row items-center gap-10">
+  <!-- Left side: text -->
+  <div class="flex-1 space-y-4">
+    <div class="flex items-center gap-2 text-sm text-sky-700">
+      <span class="inline-block w-2 h-2 bg-sky-500 rounded-full"></span>
+      Open to roles in Singapore • Remote friendly
     </div>
-  </section>
 
-  <!-- Hero -->
-  <section id="home" class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 pt-14 pb-10">
-    <div class="grid md:grid-cols-2 items-center gap-10">
-      <div>
-        <div class="inline-flex items-center gap-2 rounded-full border px-3 py-1 text-xs text-slate-600 mb-4">
-          <span class="w-2 h-2 bg-sky-500 rounded-full"></span> Open to roles in Singapore • Remote friendly
-        </div>
-        <h1 class="text-3xl sm:text-4xl font-bold leading-tight">Data / AI Graduate who ships
-          <span class="text-sky-600">real projects</span></h1>
-        <p class="mt-4 text-slate-600">I turn data into insights and working apps: Python • SQL • ML • AWS SageMaker • Flask • Android (Kotlin). I love building end‑to‑end: from EDA and models to simple, usable interfaces.</p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#projects" class="inline-flex items-center gap-2 rounded-xl bg-sky-600 text-white px-4 py-2 hover:bg-sky-700">View Projects</a>
-          <a href="#resume" class="inline-flex items-center gap-2 rounded-xl border px-4 py-2 hover:border-sky-600">Download Resume</a>
-        </div>
-        <div class="mt-6 flex flex-wrap gap-2 text-xs text-slate-500">
-          <span class="chip">Python</span>
-          <span class="chip">SQL</span>
-          <span class="chip">Pandas</span>
-          <span class="chip">scikit‑learn</span>
-          <span class="chip">AWS SageMaker</span>
-          <span class="chip">Flask</span>
-          <span class="chip">Kotlin</span>
-        </div>
-      </div>
-      <div class="bg-white rounded-2xl border p-6 shadow-sm">
-        <div class="text-sm text-slate-500 mb-2">Featured Project</div>
-        <div class="aspect-video bg-slate-100 rounded-xl grid place-items-center">Add a project image / GIF here</div>
-        <h3 class="mt-4 font-semibold">Wildlife Species Classification (AWS SageMaker)</h3>
-        <p class="text-slate-600 text-sm mt-1">Trained & deployed a CNN (ResNet) with a reproducible pipeline. Compared baseline vs transfer learning, logged metrics, and served an endpoint.</p>
-        <div class="mt-3 flex gap-3 text-sm">
-          <a class="text-sky-600 hover:underline" target="_blank" href="#">GitHub Repo</a>
-          <a class="text-slate-600 hover:underline" target="_blank" href="#">Demo / Notebook</a>
-        </div>
-      </div>
+    <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 leading-tight">
+      Data / AI Graduate who ships <span class="text-sky-600">real projects</span>
+    </h1>
+
+    <p class="text-slate-700 max-w-xl">
+      Hello, my name is <span class="font-semibold">Shwe Yamin Oo</span> — a Data Science graduate passionate about transforming data into meaningful insights and AI solutions.
+      I build end-to-end projects across <span class="font-medium">Python</span>, <span class="font-medium">SQL</span>, and <span class="font-medium">Machine Learning</span>.
+      My interests include machine learning, data cleaning, and artificial intelligence. I’m open to roles in Singapore and remote.
+    </p>
+
+    <div class="flex flex-wrap gap-3 pt-2">
+      <a href="#projects" class="inline-flex items-center gap-2 rounded-xl bg-sky-600 text-white px-4 py-2 hover:bg-sky-700">View Projects</a>
+      <a href="resume.pdf" class="inline-flex items-center gap-2 rounded-xl border px-4 py-2 hover:border-sky-600">Download Resume</a>
     </div>
-  </section>
+  </div>
+
+  <!-- Right side: photo -->
+  <div class="flex-1 flex justify-center md:justify-end">
+    <div class="relative bg-white rounded-3xl border p-3 shadow-lg w-full max-w-sm md:max-w-lg">
+      <img src="me.jpg" alt="Photo of Shwe Yamin Oo"
+           class="w-full h-auto rounded-2xl object-cover">
+    </div>
+  </div>
+</section>
+
+
+
 
   <!-- Projects -->
   <section id="projects" class="bg-white border-y">
